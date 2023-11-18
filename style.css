@@ -1,0 +1,530 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  
+  nav, header, main, footer {
+    border: 2.5px solid;
+  }
+  
+  body {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      font-size: 18px;
+      font-family: Arial, sans-serif, "Times New Roman";
+      background: #FEF2F2;
+    }
+
+    
+    #skillDesktop{
+      display: block;
+    }
+  
+    header {
+      height: 110px;
+      align-items: center;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+      background-color:  #B6666F;
+    }
+    
+    #wrapper {
+      margin: auto;
+      padding: 15px;
+      width: 100%;
+      align-items: center;
+    }
+    
+    #content {
+        padding: 5px 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 75vh;
+        margin: auto;
+      }
+      
+    nav {
+      width: 100%;
+      align-items: center;
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      font-size: 18px;
+    }
+    
+    nav ul{
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    main {
+      overflow: auto;
+      width: 100%;
+      height: 75vh;
+      min-height: 100%;
+      margin-left: 5px;
+      padding: 10px;
+    }
+    
+    footer {
+      display: flex;
+      width: 100%;
+      height: 30px;
+      font-style: italic;
+      align-items: center;
+      justify-content: center;
+      background-color: #B6666F;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    
+    header img {
+      display: flex;
+      margin-right: 10px;
+    }
+    
+    header a {
+      cursor: default;
+    }
+    
+    #header1 {
+      font-size: 1em;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    #header3 span {
+      max-height: 20px;
+    }
+    
+    #header3 {
+      display: flex;
+      width: 340px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    #header3 h1:nth-child(even) {
+      display: none;
+    }
+    
+    nav li {
+      list-style: none;
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      vertical-align: middle;
+    }
+    
+    nav a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 38px;
+    }
+    
+    nav br {
+      display: none;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+    
+    a:link, a:visited {
+      color: black;
+    }
+    
+    a:hover {
+      color: #D1A080;
+    }
+    
+    footer a:hover {
+      color: #D1A080;
+    }
+    
+  
+  .skills-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3em;
+  }
+    nav a:hover {
+      color: white;
+      background-color: #D1A080;
+      transition: 0.4s;
+    }
+    
+    #work table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #B6666F;
+      border-left: 5px solid #B6666F;
+    }
+    
+    #work td, #work tr, #work th {
+      padding: 5px;
+    }
+    
+    #educationPage table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #B6666F;
+      border-left: 5px solid #B6666F;
+    }
+    
+    #educationPage td, #educationPage tr, #educationPage th {
+      padding: 5px;
+    }
+    
+    thead {
+      background-color: #E4C2C1;
+      border-bottom: 1px solid #B6666F;
+    }
+    
+    .College {
+      font-weight: bold;
+      color: #B6666F;
+    }
+    
+    .Location {
+      opacity: 55%;
+      padding-left: 6px;
+    }
+    
+    .Date {
+      opacity: 50%;
+      text-align: right;
+    }
+    
+    .major {
+      font-size: large;
+      font-weight: bold;
+    }
+    
+    .role {
+      opacity: 60%;
+    }
+    
+    .role ul {
+      list-style: circle;
+      list-style-position: inside;
+    }
+    
+    .table {
+      padding-left: 8px;
+    }
+    
+    label {
+      opacity: 70%;
+      padding-left: 4px;
+    }
+    
+    textarea {
+      width: 250px;
+      border: 1px solid #B6666F;
+      border-radius: 4px;
+    }
+    
+    input[type=text] {
+      width: 250px;
+      padding: 15px 15px;
+      margin-top: 2px;
+      margin-bottom: 6px;
+      border: 1px solid #B6666F;
+      border-radius: 4px;
+    }
+    
+    input[type=button] {
+      width: 250px;
+      background-color:  #B6666F;
+      color: white;
+      padding: 8px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    #form {
+      display: none;
+      margin-left: 20px;
+      color: #B6666F;
+    }
+    
+    /* Tablet screen size */
+    @media only screen and (max-width: 1024px) {
+      #content {
+        flex-direction: column;
+      }
+      
+      
+    #skillmobile{
+      display: block;
+    }
+  
+    
+    #skillDesktop{
+      display: none;
+    }
+  
+      .skills-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      nav {
+        width: 100%;
+        max-width: 100%;
+        max-height: fit-content;
+        justify-content: center;
+      }
+      
+      nav li {
+        width: auto;
+        min-width: 90px;
+        min-height: 44px;
+      }
+      
+      nav a {
+        padding: 0 10px;
+        min-height: 44px;
+      }
+      
+      nav br {
+        display: flex;
+      }
+      
+      main {
+        width: 100%;
+        margin-left: 0;
+        border-top: 0;
+      }  
+    }
+    
+    #indexPage {
+      font-size: large;
+    }
+  
+    #skillsPage {
+      padding: 0;
+    }
+    
+    /* Mobile screen size */
+    @media only screen and (max-width: 648px) {
+      header {
+        height: 68px;
+        padding: 0;
+        justify-content: center;
+      }
+  
+      #skillmobile{
+        display: block;
+      }
+  
+      
+      #skillDesktop{
+        display: none;
+      }
+        
+      header img {
+        margin: 4px;
+      }
+    
+      nav {
+        max-width: none;
+      }
+      
+      nav li {
+        width: 100%;
+        min-width: fit-content;
+      }
+      nav ul{
+        flex-direction: column;
+        align-items: center;
+      }
+      nav a {
+        min-width: 300px;
+        min-height: 38px;
+        height: 44px;
+        border-bottom: solid 1px #B6666F; 
+      }
+      
+      nav br {
+        display: none;
+      }
+  
+      #skillsPage {
+        padding-left: 200;
+      }
+      #img2 {
+       
+        padding-right: 0;
+        margin: auto;
+      }
+    
+          
+      /* Show first name */
+      #header3 {
+        overflow: hidden;
+        width: 100%;
+        max-height: 60px;
+        padding-left: 5px;
+      }
+      
+      #header3 span {
+        max-height: 20px;
+        font-size: small;
+      }
+      
+      #header3 h1 {
+        overflow: hidden;
+      }
+      
+      #header3 h1:nth-child(even) {
+        display: flex;
+      }
+    
+      /* Hide full name (and only shows first name) */
+      #header3 h1:nth-child(odd) {
+        display: none;
+      }
+    }
+    .fa {
+      padding: 5px;
+      font-size: 30px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+    }
+    .fa-linkedin {
+      background: #007bb5;
+      color: white;
+  }
+    .fa-google {
+      background-color: #E4C2C1;
+    }
+  
+
+/*Private lesson page*/
+    ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+  padding: 25px 25px;
+  width: 100%;
+  background: #EA95A0;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: pink;
+  color: white !important
+}
+
+/*Contact Form*/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #EA95A0;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: rgb(173, 92, 92);
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #bd676718;
+    padding: 20px;
+  }
