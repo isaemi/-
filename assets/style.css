@@ -19,6 +19,25 @@
       background: #FEF2F2;
     }
 
+    body img{
+      bottom: 15%;
+  position: absolute;
+  -webkit-animation: linear infinite alternate;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 5s;
+}
+@-webkit-keyframes run {
+  0% {
+    left: 0;
+  }
+  50% {
+    right: 0;
+  }
+  100% {
+    left: 0;
+    , webkit-transform: scaleX(-1);
+  }
+}
     
     #skillDesktop{
       display: block;
